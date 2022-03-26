@@ -23,7 +23,7 @@
   - [x] luci-app-filetransfer  #文件传输（可web安装ipk包）
   - [x] luci-app-firewall   #添加防火墙
   - [x] luci-app-frpc   #内网穿透Frp客户端
-  - [x] luci-app-frps   #内网穿透Frp服务端
+  - [ ] luci-app-frps   #内网穿透Frp服务端
   - [x] luci-app-hd-idle  #硬盘休眠
   - [x] luci-app-ipsec-vpnd  #VPN服务器 IPSec
   - [x] luci-app-mwan3   #MWAN3负载均衡
