@@ -2,7 +2,7 @@
 
 **项目说明**：
 - 本项目使用 Github Actions 下载 [Lean](https://github.com/coolsnowwolf/lede) 的 `Openwrt` 源码仓库，进行云编译。
-- 本项目使用定时编译（北京时间每周日下午4点开始自动运行编译）及触发编译（更新script.sh后可开始编译）两种方式。
+- 本项目采用手动触发方式启动。
 - 本项目同时编译5.4内核、5.10内核、5.15内核固件
 - 本项目编译固件适配 X86_64架构软路由
 - 本项目编译固件后台地址：10.0.0.77 管理员：root  初始密码：空
@@ -23,7 +23,7 @@
   - [x] luci-app-filetransfer  #文件传输（可web安装ipk包）
   - [x] luci-app-firewall   #添加防火墙
   - [x] luci-app-frpc   #内网穿透Frp客户端
-  - [ ] luci-app-frps   #内网穿透Frp服务端
+  - ~~[x] luci-app-frps   #内网穿透Frp服务端~~
   - [x] luci-app-hd-idle  #硬盘休眠
   - [x] luci-app-ipsec-vpnd  #VPN服务器 IPSec
   - [x] luci-app-mwan3   #MWAN3负载均衡
@@ -45,6 +45,13 @@
   - [x] luci-app-vsftpd  #FTP服务器
   - [x] luci-app-wol   #WOL网络唤醒
   - [x] luci-app-zerotier  #ZeroTier内网穿透
+
+**定制插件**：
+  - [x] luci-app-airplay2  #Airplay2音频接收器
+  - [x] luci-app-nps  #nps内网穿透
+  - [x] luci-app-uugamebooster  #UU加速器
+  - [x] luci-app-udpxy  #IPTV组播转发
+  - [x] igmpproxy #组播代理
 
 **系统截图**：
 
