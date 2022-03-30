@@ -46,7 +46,8 @@
   - [x] luci-app-wol   #WOL网络唤醒
   - [x] luci-app-zerotier  #ZeroTier内网穿透
 
-**定制插件**：
+**个人定制插件**：
+  - [x] luci-app-argon-config  #Argon主题设置
   - [x] luci-app-airplay2  #Airplay2音频接收器
   - [x] luci-app-nps  #nps内网穿透
   - [x] luci-app-uugamebooster  #UU加速器
@@ -60,4 +61,3 @@
 ## 感谢 ❤️
 - 源码来源： Lean 的 Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
 - 脚本来源： P3TERX 的 使用 GitHub Actions 云编译 OpenWrt https://github.com/P3TERX/Actions-OpenWrt
-
