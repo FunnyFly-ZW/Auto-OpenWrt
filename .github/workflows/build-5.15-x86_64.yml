@@ -178,8 +178,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: ${{ steps.tag.outputs.release_tag }}_Passwall_k5.15
-        tag_name: k5.15
+        tag_name: ${{ steps.tag.outputs.release_tag }}_Passwall_k5.15
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 

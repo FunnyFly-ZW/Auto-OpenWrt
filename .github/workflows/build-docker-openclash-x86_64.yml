@@ -66,6 +66,7 @@ jobs:
        cd package/lean  
        rm -rf luci-theme-argon  
        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+       git clone https://github.com/jerrykuku/luci-app-argon-config.git
        
     - name: luci-app-openclash install
       run: |
@@ -188,7 +189,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
+        tag_name: ${{ steps.tag.outputs.release_tag }}_Openclash_Docker_k5.15
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
