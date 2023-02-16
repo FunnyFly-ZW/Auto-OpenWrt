@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: x86_5.15.config
+  CONFIG_FILE: x86_64.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-5.15-part2.sh
   UPLOAD_BIN_DIR: false
@@ -68,6 +68,13 @@ jobs:
        rm -rf luci-theme-argon  
        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
        git clone https://github.com/jerrykuku/luci-app-argon-config.git
+     
+    - name: luci-app-argon-config install
+      run: |
+       cd openwrt
+       cd package/lean  
+       git clone https://github.com/jerrykuku/luci-app-argon-config.git
+       
      
     - name: Load custom feeds
       run: |
