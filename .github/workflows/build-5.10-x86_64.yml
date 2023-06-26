@@ -63,17 +63,28 @@ jobs:
         
     - name: luci-theme-argon install
       run: |
-       cd openwrt
-       cd package/lean  
-       rm -rf luci-theme-argon  
-       git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+        cd openwrt
+        cd package/lean  
+        rm -rf luci-theme-argon  
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
      
     - name: luci-app-argon-config install
       run: |
-       cd openwrt
-       cd package/lean  
-       git clone https://github.com/jerrykuku/luci-app-argon-config.git
-       
+        cd openwrt
+        cd package/lean  
+        git clone https://github.com/jerrykuku/luci-app-argon-config.git
+
+    - name: luci-app-mosdns
+      run: |
+        cd openwrt/package
+        git clone https://github.com/sbwml/luci-app-mosdns.git
+        git clone https://github.com/sbwml/v2ray-geodata.git
+ 
+ #    - name: aliyundrive-webdav
+ #      run: |
+ #        cd openwrt/package 
+ #        git clone https://github.com/messense/aliyundrive-webdav.git       
+
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default

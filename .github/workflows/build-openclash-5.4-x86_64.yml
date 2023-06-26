@@ -53,6 +53,7 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+        
     - name: Clone source code
       working-directory: /workdir
       run: |
@@ -62,16 +63,16 @@ jobs:
         
     - name: luci-theme-argon install
       run: |
-       cd openwrt
-       cd package/lean  
-       rm -rf luci-theme-argon  
-       git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+        cd openwrt
+        cd package/lean  
+        rm -rf luci-theme-argon  
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
        
     - name: luci-app-argon-config install
       run: |
-       cd openwrt
-       cd package/lean  
-       git clone https://github.com/jerrykuku/luci-app-argon-config.git
+        cd openwrt
+        cd package/lean  
+        git clone https://github.com/jerrykuku/luci-app-argon-config.git
        
     - name: luci-app-openclash install
       run: |
@@ -87,14 +88,14 @@ jobs:
         
     - name: luci-app-adguardhome
       run: |
-       cd openwrt/package 
-       git clone https://github.com/kongfl888/luci-app-adguardhome.git
+        cd openwrt/package 
+        git clone https://github.com/kongfl888/luci-app-adguardhome.git
        
     - name: luci-app-mosdns
       run: |
-       cd openwrt/package
-       git clone https://github.com/sbwml/luci-app-mosdns.git
-       git clone https://github.com/sbwml/v2ray-geodata.git
+        cd openwrt/package
+        git clone https://github.com/sbwml/luci-app-mosdns.git
+        git clone https://github.com/sbwml/v2ray-geodata.git
             
     - name: Load custom feeds
       run: |

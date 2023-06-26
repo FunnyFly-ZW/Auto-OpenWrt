@@ -16,10 +16,10 @@
   
 **集成插件**：（**打勾项**默认**编译**入固件、**未打勾项**默认**不编译**入固件）
   - [x] luci-app-accesscontrol  #访问时间控制
-  - [x] luci-app-adbyby-plus  #广告屏蔽大师Plus +
+  - [ ] ~~luci-app-adbyby-plus  #广告屏蔽大师Plus +~~（已移除）
   - [x] luci-app-arpbind  #IP/MAC绑定
   - [x] luci-app-autoreboot  #支持计划重启
-  - [x] luci-app-aliyundrive-webdav  #阿里云盘WebDAV
+  - [ ] ~~luci-app-aliyundrive-webdav  #阿里云盘WebDAV~~（已移除）
   - [x] luci-app-ddns   #动态域名 DNS（集成阿里DDNS客户端）
   - [x] luci-app-diskman   #磁盘管理工具
   - [x] luci-app-filetransfer  #文件传输（可web安装ipk包）
@@ -58,6 +58,7 @@
   - [x] luci-app-uugamebooster  #UU加速器
   - [x] luci-app-udpxy  #IPTV组播转发
   - [x] igmpproxy #组播代理
+  - [x] MosDNS #DNS本地转发器
 
 **系统截图**：
 
