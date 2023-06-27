@@ -54,7 +54,7 @@
 **个人定制插件**：
   - [x] ~~luci-app-argon-config  #Argon主题设置~~（上游已包含）
   - [x] luci-app-airplay2  #Airplay2音频接收器
-  - [x] luci-app-mosdns #DNS本地转发器
+  - [x] luci-app-mosdns #MosDNS本地转发器
   - [x] luci-app-nps  #nps内网穿透
   - [x] luci-app-uugamebooster  #UU加速器
   - [x] luci-app-udpxy  #IPTV组播转发
