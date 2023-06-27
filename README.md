@@ -34,7 +34,7 @@
   - [x] luci-app-nlbwmon   #网络带宽监视器
   - [x] luci-app-openvpn   # VPN客户端
   - [x] luci-app-openvpn server  # VPN服务器
-  - [x] luci-app-passwall  #科学上网（Li大内插件）
+  - [x] luci-app-passwall  #科学上网（Li大插件）
   - [x] luci-app-ramfree  #释放内存
   - [x] luci-app-samba   #网络共享（Samba）
   - [x] luci-app-smartdns  #SmartDNS本地服务器
@@ -54,11 +54,12 @@
 **个人定制插件**：
   - [x] ~~luci-app-argon-config  #Argon主题设置~~（上游已包含）
   - [x] luci-app-airplay2  #Airplay2音频接收器
+  - [x] luci-app-mosdns #DNS本地转发器
   - [x] luci-app-nps  #nps内网穿透
   - [x] luci-app-uugamebooster  #UU加速器
   - [x] luci-app-udpxy  #IPTV组播转发
   - [x] igmpproxy #组播代理
-  - [x] MosDNS #DNS本地转发器
+
 
 **系统截图**：
 
