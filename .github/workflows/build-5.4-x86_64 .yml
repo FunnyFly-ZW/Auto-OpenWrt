@@ -40,6 +40,22 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+      
+    - name: Free Disk Space
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: ture
+
+        # all of these default to true, but feel free to set to
+        # "false" if necessary for your workflow
+        dotnet: true
+        android: true
+        haskell: true
+        swap-storage: true
+        docker-images: true
+        large-packages: true
 
     - name: Initialization environment
       env:
